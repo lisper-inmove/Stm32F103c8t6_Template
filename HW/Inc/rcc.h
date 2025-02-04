@@ -2,5 +2,6 @@
 #define __RCC__H
 
 void RccClockInit(void);
+void RccClockInitOuter(void);
 
 #endif
