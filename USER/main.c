@@ -4,12 +4,11 @@
 
 int main(void)
 {
-	HAL_Init();
-	RccClockInitOuter();
-	ToggleLedGPIOB_0();
-	
-	while (1) {
-		HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
-		HAL_Delay(500);
-	}
+  HAL_Init();
+  RccClockInitOuter();
+  ToggleLedGPIOB_0();
+  while (1) {
+    HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
+    HAL_Delay(700);
+  }
 }
