@@ -10,9 +10,8 @@ int main(void)
   ToggleLedGPIOB_0();
   SW_Init();
   while (1) {
-    int result = SW_Scan(0);
-    switch(result) {
-    case 8: HAL_GPIO_TogglePin(GPIOB, LED_GPIO);
+    switch(SW_Scan(PRESS_TRIGGER_MODE)) {
+    case BUTTON_PRESSED: HAL_GPIO_TogglePin(GPIOB, LED_GPIO);
       break;
     }
   }
