@@ -1,0 +1,11 @@
+#+TITLE: GPIO_InitTypeDef
+#+DATE: 2025-02-05 13:05:43
+#+DISPLAY: t
+#+STARTUP: indent
+#+OPTIONS: toc:10
+#+AUTHOR: inmove
+
+* Pull
+GPIO_NOPULL: 含义： 不启用内部上拉或下拉电阻。使用场景：当外部电路已经提供了上拉或下拉电阻时使用。
+GPIO_PULLUP: 含义： 启用内部上拉电阻。使用场景：当按钮或其他输入设备未按下时，引脚需要保持高电平。
+GPIO_PULLDOWN: 含义： 启用内部下拉电阻。使用场景：当按钮或其他输入设备未按下时，引脚需要保持低电平。
